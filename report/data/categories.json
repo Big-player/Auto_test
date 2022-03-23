@@ -1,5 +1,43 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "_pytest.fixtures.FixtureLookupError: ('login', <FixtureRequest for <Function test_m1>>)",
+      "children" : [ {
+        "name" : "test_m1",
+        "uid" : "25a16bf50dc259f0",
+        "parentUid" : "1264ceb258f5639467ef55f940498eff",
+        "status" : "broken",
+        "time" : {
+          "start" : 1648027019689,
+          "stop" : 1648027019689,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1264ceb258f5639467ef55f940498eff"
+    }, {
+      "name" : "IndexError: list index out of range",
+      "children" : [ {
+        "name" : "test_m2",
+        "uid" : "aa21af1fd6ea2e3c",
+        "parentUid" : "cbf21ee610ffd376e0ce643a364ade80",
+        "status" : "broken",
+        "time" : {
+          "start" : 1648027019704,
+          "stop" : 1648027019704,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cbf21ee610ffd376e0ce643a364ade80"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }

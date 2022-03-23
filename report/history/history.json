@@ -2,56 +2,39 @@
   "205f2fdbb83e298ced6fac31532f5d9c" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d77ef79087044e7c",
-      "status" : "passed",
+      "uid" : "aa21af1fd6ea2e3c",
+      "status" : "broken",
+      "statusDetails" : "IndexError: list index out of range",
       "time" : {
-        "start" : 1646991524470,
-        "stop" : 1646991524685,
-        "duration" : 215
+        "start" : 1648027019704,
+        "stop" : 1648027019704,
+        "duration" : 0
       }
     } ]
   },
   "38b94a79ffa1ba866b64ba89466ae6d4" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "36fc50f9211f628b",
-      "status" : "passed",
+      "uid" : "25a16bf50dc259f0",
+      "status" : "broken",
+      "statusDetails" : "_pytest.fixtures.FixtureLookupError: ('login', <FixtureRequest for <Function test_m1>>)",
       "time" : {
-        "start" : 1646991524013,
-        "stop" : 1646991524466,
-        "duration" : 453
-      }
-    } ]
-  },
-  "12925d6ccd93462213f0e48447354407" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "a9ed94f35dac7593",
-      "status" : "passed",
-      "time" : {
-        "start" : 1646991524688,
-        "stop" : 1646991524688,
+        "start" : 1648027019689,
+        "stop" : 1648027019689,
         "duration" : 0
       }
     } ]
