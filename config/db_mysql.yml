@@ -1,0 +1,14 @@
+#多个数据库
+mysql01:
+  host: 10.2.2.84
+  user: root
+  password: yunzhihui123
+  db_name: ${db_name}
+  port: 3306
+
+mysql02:
+  host: 127.0.0.1
+  user: root
+  password: 123456
+  db_name: ${db_name}
+  port: 3306
