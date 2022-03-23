@@ -1,4 +1,0 @@
-#忽略idea等文件
-.idea
-__pycache__
-.DS_Store
