@@ -1,5 +1,6 @@
 import pytest
 import os
+import allure
 
 if __name__ == '__main__':
     pytest.main()
