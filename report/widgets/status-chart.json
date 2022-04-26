@@ -1,21 +1,41 @@
 [ {
-  "uid" : "25a16bf50dc259f0",
-  "name" : "test_m1",
+  "uid" : "1d8d0140361ae4dd",
+  "name" : "test_api01[验证查询数据处理器列表2-http1-result1]",
   "time" : {
-    "start" : 1648027019689,
-    "stop" : 1648027019689,
-    "duration" : 0
+    "start" : 1650950321836,
+    "stop" : 1650950321893,
+    "duration" : 57
   },
-  "status" : "broken",
+  "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "aa21af1fd6ea2e3c",
-  "name" : "test_m2",
+  "uid" : "9dce59ef23b560b4",
+  "name" : "test_api[验证查询数据处理器列表-http0-result0]",
   "time" : {
-    "start" : 1648027019704,
-    "stop" : 1648027019704,
-    "duration" : 0
+    "start" : 1650950321560,
+    "stop" : 1650950321661,
+    "duration" : 101
   },
-  "status" : "broken",
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e30c942cbac79093",
+  "name" : "test_api01[验证查询数据处理器列表-http0-result0]",
+  "time" : {
+    "start" : 1650950321780,
+    "stop" : 1650950321829,
+    "duration" : 49
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "f230befbd4555ffc",
+  "name" : "test_api[验证查询数据处理器列表2-http1-result1]",
+  "time" : {
+    "start" : 1650950321727,
+    "stop" : 1650950321775,
+    "duration" : 48
+  },
+  "status" : "failed",
   "severity" : "normal"
 } ]

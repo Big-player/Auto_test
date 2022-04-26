@@ -1,0 +1,87 @@
+{
+  "uid" : "1d8d0140361ae4dd",
+  "name" : "test_api01[验证查询数据处理器列表2-http1-result1]",
+  "fullName" : "testCase01.test_02#test_api01",
+  "historyId" : "49a00cdde9a8d4506d3a35c91e3a396b",
+  "time" : {
+    "start" : 1650950321836,
+    "stop" : 1650950321893,
+    "duration" : 57
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 401 == 200\n  +401\n  -200",
+  "statusTrace" : "login = <requests.sessions.Session object at 0x7fa5c1c4a670>\ncase = '验证查询数据处理器列表2'\nhttp = {'body': {'conditions': {'type': 1}, 'orders': [{'asc': False, 'column': 'updateTime'}, {'asc': False, 'column': 'crea...ustom/selectPage HTTP/1.1'}, 'method': 'POST', 'path': 'http://10.2.3.201:18080/gateway/dovm/api/v1/custom/selectPage'}\nresult = {'response': {'code': 200, 'message': 'succeess'}}\n\n    @pytest.mark.parametrize(\"case,http,result\", read_yaml('data/search_list_api.yaml'))\n    def test_api01(login, case, http, result):\n        s = login.request(url=http['path'], method=http['method'], headers=http['headers'], json=http['body'])\n        print(s.text)\n>       assert s.status_code == result['response']['code']\nE       assert 401 == 200\nE         +401\nE         -200\n\ntestCase01/test_02.py:8: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "login",
+    "time" : {
+      "start" : 1650950321559,
+      "stop" : 1650950321559,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testCase01"
+  }, {
+    "name" : "suite",
+    "value" : "test_02"
+  }, {
+    "name" : "host",
+    "value" : "chengkedeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "52221-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testCase01.test_02"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'验证查询数据处理器列表2'"
+  }, {
+    "name" : "http",
+    "value" : "{'method': 'POST', 'path': 'http://10.2.3.201:18080/gateway/dovm/api/v1/custom/selectPage', 'headers': {'POST': '/gateway/dovm/api/v1/custom/selectPage HTTP/1.1', 'Host': '10.2.3.201:18080', 'Content-Length': '136', 'Content-Type': 'application/json;charset=UTF-8'}, 'body': {'pageIndex': 1, 'pageSize': 10, 'orders': [{'column': 'updateTime', 'asc': False}, {'column': 'createTime', 'asc': False}], 'conditions': {'type': 1}}}"
+  }, {
+    "name" : "result",
+    "value" : "{'response': {'code': 200, 'message': 'succeess'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1d8d0140361ae4dd.json",
+  "parameterValues" : [ "'验证查询数据处理器列表2'", "{'method': 'POST', 'path': 'http://10.2.3.201:18080/gateway/dovm/api/v1/custom/selectPage', 'headers': {'POST': '/gateway/dovm/api/v1/custom/selectPage HTTP/1.1', 'Host': '10.2.3.201:18080', 'Content-Length': '136', 'Content-Type': 'application/json;charset=UTF-8'}, 'body': {'pageIndex': 1, 'pageSize': 10, 'orders': [{'column': 'updateTime', 'asc': False}, {'column': 'createTime', 'asc': False}], 'conditions': {'type': 1}}}", "{'response': {'code': 200, 'message': 'succeess'}}" ]
+}

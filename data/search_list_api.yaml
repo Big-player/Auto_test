@@ -1,0 +1,30 @@
+tests:
+- case: 验证查询数据处理器列表
+  http:
+    method: POST
+    path: http://$Host/gateway/dovm/api/v1/custom/selectPage
+    headers:
+      POST: /gateway/dovm/api/v1/custom/selectPage HTTP/1.1
+      Host: $Host
+      Content-Length: '136'
+      Content-Type: application/json;charset=UTF-8
+    body: {"pageIndex":1,"pageSize":10,"orders":[{"column":"updateTime","asc":false},{"column":"createTime","asc":false}],"conditions":{"type":1}}
+  expected:
+    response:
+      code: 200
+      message: succeess
+
+- case: 验证查询数据处理器列表2
+  http:
+    method: POST
+    path: http://$Host/gateway/dovm/api/v1/custom/selectPage
+    headers:
+      POST: /gateway/dovm/api/v1/custom/selectPage HTTP/1.1
+      Host: $Host
+      Content-Length: '136'
+      Content-Type: application/json;charset=UTF-8
+    body: {"pageIndex":1,"pageSize":10,"orders":[{"column":"updateTime","asc":false},{"column":"createTime","asc":false}],"conditions":{"type":1}}
+  expected:
+    response:
+      code: 200
+      message: succeess

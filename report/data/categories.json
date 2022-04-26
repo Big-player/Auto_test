@@ -1,43 +1,81 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "children" : [ {
-    "name" : "Test defects",
+    "name" : "Product defects",
     "children" : [ {
-      "name" : "_pytest.fixtures.FixtureLookupError: ('login', <FixtureRequest for <Function test_m1>>)",
+      "name" : "AssertionError: assert 401 == 200\n  +401\n  -200",
       "children" : [ {
-        "name" : "test_m1",
-        "uid" : "25a16bf50dc259f0",
-        "parentUid" : "1264ceb258f5639467ef55f940498eff",
-        "status" : "broken",
+        "name" : "test_api[验证查询数据处理器列表-http0-result0]",
+        "uid" : "9dce59ef23b560b4",
+        "parentUid" : "9bc8980a5b39187d19e4a00efdcd3e43",
+        "status" : "failed",
         "time" : {
-          "start" : 1648027019689,
-          "stop" : 1648027019689,
-          "duration" : 0
+          "start" : 1650950321560,
+          "stop" : 1650950321661,
+          "duration" : 101
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "1264ceb258f5639467ef55f940498eff"
-    }, {
-      "name" : "IndexError: list index out of range",
-      "children" : [ {
-        "name" : "test_m2",
-        "uid" : "aa21af1fd6ea2e3c",
-        "parentUid" : "cbf21ee610ffd376e0ce643a364ade80",
-        "status" : "broken",
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'验证查询数据处理器列表'", "{'method': 'POST', 'path': 'http://10.2.3.201:18080/gateway/dovm/api/v1/custom/selectPage', 'headers': {'POST': '/gateway/dovm/api/v1/custom/selectPage HTTP/1.1', 'Host': '10.2.3.201:18080', 'Content-Length': '136', 'Content-Type': 'application/json;charset=UTF-8'}, 'body': {'pageIndex': 1, 'pageSize': 10, 'orders': [{'column': 'updateTime', 'asc': False}, {'column': 'createTime', 'asc': False}], 'conditions': {'type': 1}}}", "{'response': {'code': 200, 'message': 'succeess'}}" ]
+      }, {
+        "name" : "test_api[验证查询数据处理器列表2-http1-result1]",
+        "uid" : "f230befbd4555ffc",
+        "parentUid" : "9bc8980a5b39187d19e4a00efdcd3e43",
+        "status" : "failed",
         "time" : {
-          "start" : 1648027019704,
-          "stop" : 1648027019704,
-          "duration" : 0
+          "start" : 1650950321727,
+          "stop" : 1650950321775,
+          "duration" : 48
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ ]
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'验证查询数据处理器列表2'", "{'method': 'POST', 'path': 'http://10.2.3.201:18080/gateway/dovm/api/v1/custom/selectPage', 'headers': {'POST': '/gateway/dovm/api/v1/custom/selectPage HTTP/1.1', 'Host': '10.2.3.201:18080', 'Content-Length': '136', 'Content-Type': 'application/json;charset=UTF-8'}, 'body': {'pageIndex': 1, 'pageSize': 10, 'orders': [{'column': 'updateTime', 'asc': False}, {'column': 'createTime', 'asc': False}], 'conditions': {'type': 1}}}", "{'response': {'code': 200, 'message': 'succeess'}}" ]
+      }, {
+        "name" : "test_api01[验证查询数据处理器列表-http0-result0]",
+        "uid" : "e30c942cbac79093",
+        "parentUid" : "9bc8980a5b39187d19e4a00efdcd3e43",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650950321780,
+          "stop" : 1650950321829,
+          "duration" : 49
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'验证查询数据处理器列表'", "{'method': 'POST', 'path': 'http://10.2.3.201:18080/gateway/dovm/api/v1/custom/selectPage', 'headers': {'POST': '/gateway/dovm/api/v1/custom/selectPage HTTP/1.1', 'Host': '10.2.3.201:18080', 'Content-Length': '136', 'Content-Type': 'application/json;charset=UTF-8'}, 'body': {'pageIndex': 1, 'pageSize': 10, 'orders': [{'column': 'updateTime', 'asc': False}, {'column': 'createTime', 'asc': False}], 'conditions': {'type': 1}}}", "{'response': {'code': 200, 'message': 'succeess'}}" ]
+      }, {
+        "name" : "test_api01[验证查询数据处理器列表2-http1-result1]",
+        "uid" : "1d8d0140361ae4dd",
+        "parentUid" : "9bc8980a5b39187d19e4a00efdcd3e43",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650950321836,
+          "stop" : 1650950321893,
+          "duration" : 57
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'验证查询数据处理器列表2'", "{'method': 'POST', 'path': 'http://10.2.3.201:18080/gateway/dovm/api/v1/custom/selectPage', 'headers': {'POST': '/gateway/dovm/api/v1/custom/selectPage HTTP/1.1', 'Host': '10.2.3.201:18080', 'Content-Length': '136', 'Content-Type': 'application/json;charset=UTF-8'}, 'body': {'pageIndex': 1, 'pageSize': 10, 'orders': [{'column': 'updateTime', 'asc': False}, {'column': 'createTime', 'asc': False}], 'conditions': {'type': 1}}}", "{'response': {'code': 200, 'message': 'succeess'}}" ]
       } ],
-      "uid" : "cbf21ee610ffd376e0ce643a364ade80"
+      "uid" : "9bc8980a5b39187d19e4a00efdcd3e43"
     } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ],
   "name" : "categories"
 }

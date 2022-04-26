@@ -1,7 +1,6 @@
 from string import Template
 
-
-def typeof(variate, replace):
+def __typeof(variate, replace):
     type = None
     result = None
     if isinstance(variate, int):
@@ -35,15 +34,13 @@ def typeof(variate, replace):
 
     return result
 
-
 """
 :param old_result 要被替换的结果,列表或者字典;data为要替换的字典值
 """
 
-
-def replace_yaml(old_result, data):
-    dat = dict(data)
+def replace_yaml(old_result, re_data):
+    dat = dict(re_data)
     old_str = str(old_result)
-    replace = Template(old_str).substitute(dat)
-    result = typeof(old_result, replace)
+    replace = Template(old_str).safe_substitute(dat)
+    result = __typeof(old_result, replace)
     return result
